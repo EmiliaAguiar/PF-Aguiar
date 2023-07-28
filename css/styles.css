@@ -340,7 +340,7 @@ body {
   width: 100%;
   padding: 4%;
   height: 350px;
-  background-image: url(./img/fondohome.jpg);
+  background-image: url(https://ibb.co/chh6QDw);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1069,7 +1069,7 @@ body {
   flex-flow: column nowrap;
   justify-content: flex-start;
   margin-bottom: 5%;
-  background-image: url(./img/banner-explora.jpg);
+  background-image: url(https://ibb.co/ZgrY2RH);
   background-position: 100% 50%;
 }
 
@@ -1364,7 +1364,7 @@ body {
 }
 /* Banner */
 .banner-princ--hoteles {
-  background-image: url(./img/banner-hotel.jpg);
+  background-image: url(https://ibb.co/QKLbgv5);
   background-position: 100% 100%;
   background-attachment: fixed;
   height: 350px;
@@ -1501,7 +1501,7 @@ body {
 }
 /* Banner */
 .banner-princ--vuelos {
-  background-image: url(./img/banner-vuelos.jpg);
+  background-image: url(https://ibb.co/g7RVvRt);
   background-attachment: fixed;
   height: 350px;
   background-size: cover;
@@ -1951,7 +1951,7 @@ body {
   flex-flow: column nowrap;
   justify-content: flex-start;
   margin-bottom: 5%;
-  background-image: url(./img/banner-contacto.jpg);
+  background-image: url(https://ibb.co/vQRYXCY);
   background-position: 100% 50%;
 }
 
