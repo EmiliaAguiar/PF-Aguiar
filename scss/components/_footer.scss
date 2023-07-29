@@ -97,6 +97,11 @@
                 padding: 2%;
                 border-radius: 5px;
                 margin: 0%;
+
+
+                &:hover {
+                    background-color: $c-secundario-v;
+                }
             }
         }
 
@@ -193,24 +198,24 @@
                 grid-template-columns: 10% 90%;
                 grid-template-rows: repeat(3 1fr);
                 gap: 2%;
-            
 
-            &__email {
-                grid-column: span 2;
-                font-size: 0.9rem;
-                padding: 2%;
-         }
 
-            &__checkbox {
-                width: 40%;
-                justify-content: center;
+                &__email {
+                    grid-column: span 2;
+                    font-size: 0.9rem;
+                    padding: 2%;
+                }
+
+                &__checkbox {
+                    width: 40%;
+                    justify-content: center;
+                }
+
+                &__index {
+                    display: flex;
+                    flex-direction: row;
+                }
+
             }
-
-            &__index {
-                display: flex;
-                flex-direction: row;
-            }
-
         }
     }
- }

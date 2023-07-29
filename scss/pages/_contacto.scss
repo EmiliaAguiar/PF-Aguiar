@@ -5,111 +5,152 @@
 .banner-princ {
 
     &__titulo--pages {
-      color: rgb(255, 255, 255);
-      font-family: $ff-parrafos;
-      text-transform: uppercase;
-      font-weight: 800;
-      font-size: 4.7rem;
-      text-align: center;
-      margin-top: 30%;
+        color: rgb(255, 255, 255);
+        font-family: $ff-parrafos;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 4.7rem;
+        text-align: center;
+        margin-top: 30%;
     }
-  
+
     &__parrafo-pages {
-      @include centrar-elemento;
-      margin-top: 3%;
-      padding: 3%;
-      font-size: 1.1rem;
-      font-family: $ff-parrafos;
-      font-weight: 500;
-      color: $gris-parrafos;
-      line-height: 1.5rem;
-      text-align: center;
+        @include centrar-elemento;
+        margin-top: 3%;
+        padding: 3%;
+        font-size: 1.1rem;
+        font-family: $ff-parrafos;
+        font-weight: 500;
+        color: $gris-parrafos;
+        line-height: 1.5rem;
+        text-align: center;
     }
-  
+
     &--contacto {
-      @include banner-secciones;
-      background-image: url(https://ibb.co/vQRYXCY);
-      background-position: 100% 50%;
+        @include banner-secciones;
+        background-image: url(../img/banner-contacto.jpg);
+        background-position: 100% 50%;
     }
-  }
+}
 
-  /* Formulario*/
+/* Formulario*/
 
-  .contacto {
-    gap:4%;
-  }
+.contacto {
+    gap: 4%;
+}
 
-  .form-contacto {
+.form-contacto {
     @include centrar-elemento;
     padding: 5% 2% 20% 2%;
     display: grid;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: repeat(5, 10%) 30% repeat(2, 10%) ;
+    grid-template-columns: 10% 40% 50%;
+    grid-template-rows: repeat(5, 10%) 30% repeat(2, 10%);
     row-gap: 2%;
     align-items: center;
-  
-&__name {
-    grid-column: span 3;
-    border-radius: 10%;
-    font-family: $ff-parrafos;
 
-}
+    &__name {
+        grid-column: span 3;
+        border-radius: 10px;
+        font-family: $ff-parrafos;
+        font-size: 0.7rem;
+        font-weight: 500;
+        padding: 1%;
+        border: solid 1px $c-textogris;
 
-&__mail {
-    grid-column: span 3;
-}
-
-&__tel {
-    grid-column: span 3;
-
-}
-
-&__motivo {
-    font-family: $ff-parrafos;
-    font-size: 0.8rem;
-    font-weight: 500;
-
-    &-drop {
-        grid-column: span 2;
-        font-size: 0.8rem;
-        height: 60%;
     }
-}
 
-&__consulta { 
-    grid-column: span 3;
-    align-self: center;
+    &__mail {
+        grid-column: span 3;
+        border-radius: 10px;
+        font-family: $ff-parrafos;
+        font-size: 0.7rem;
+        font-weight: 500;
+        padding: 1%;
+        border: solid 1px $c-textogris;
 
 
-&-textarea {
-    grid-column: span 3;
-    height: 100%;
+    }
 
-}
-}
+    &__tel {
+        grid-column: span 3;
+        border-radius: 10px;
+        font-family: $ff-parrafos;
+        font-size: 0.7rem;
+        font-weight: 500;
+        padding: 1%;
+        border: solid 1px $c-textogris;
 
-&__msj {
-    font-family: $ff-parrafos;
-    font-size: 0.8rem;
-    font-weight: 500;
-    grid-column: span 2;
-} 
 
-&__img {
-visibility: hidden;}
+    }
 
-&__boton {
-    width: 100%;
-    font-family: $ff-titulos;
-   font-weight: 600;
-   font-size: 0.8rem;
-   text-align: center;
-   color: rgb(212, 255, 255);
-   background-color: rgb(89, 162, 252);
-   padding: 2%;
-   border-radius: 5px;
-   border: none;
-}
+    &__motivo {
+        font-family: $ff-parrafos;
+        font-size: 0.8rem;
+        font-weight: 500;
+        grid-column: span 2;
+
+
+        &-drop {
+            font-size: 0.8rem;
+            border-radius: 10px;
+            font-family: $ff-parrafos;
+            font-size: 0.7rem;
+            font-weight: 500;
+            padding: 1%;
+            border: solid 1px $c-textogris;
+
+        }
+    }
+
+    &__consulta {
+        grid-column: span 3;
+        align-self: center;
+        border-radius: 20px;
+        padding: 1%;
+        border: solid 1px $c-textogris;
+
+
+        &-textarea {
+            grid-column: span 3;
+            height: 100%;
+
+        }
+    }
+
+    &__msj {
+        font-family: $ff-parrafos;
+        font-size: 0.8rem;
+        font-weight: 500;
+        grid-column: span 2;
+    }
+
+    &__privacidad {
+        font-family: $ff-parrafos;
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    &__img {
+        visibility: hidden;
+    }
+
+    &__checkbox {
+        align-items: right;
+    }
+
+    &__boton {
+        width: 100%;
+        font-family: $ff-titulos;
+        font-weight: 600;
+        font-size: 0.8rem;
+        text-align: center;
+        color: rgb(212, 255, 255);
+        background-color: rgb(89, 162, 252);
+        padding: 2%;
+        border-radius: 5px;
+        border: none;
+    }
 
 }
 
@@ -120,67 +161,76 @@ visibility: hidden;}
     column-gap: 4%;
     flex-direction: column;
     align-items: center;
-      
-        &__mapa {
-            width: 100%;
-            height: 300px;
-            margin-bottom: 4%;
-        }
 
-        &__p {
-            font-family: $ff-parrafos;
-            font-weight: 600;
-            text-align: center;
-            font-size: 0.8rem;
-        }
-
+    &__mapa {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 4%;
     }
+
+    &__p {
+        font-family: $ff-parrafos;
+        font-weight: 600;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+}
 
 
 /* Tablet*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
-/* Formulario*/
+    /* Formulario*/
 
-  
 
-.form-contacto {
-    @include centrar-elemento;
-    padding: 5% 2% 5% 2%;
-    display: grid;
-    grid-template-columns: 20% 50% 30%;
-    grid-template-rows: repeat(5, 10%) 30% repeat(2, 10%) ;
-    row-gap: 2%;
-    align-items: center;
 
-    &__boton {
-        width: 100%;
-        font-family: $ff-titulos;
-       font-weight: 600;
-       font-size: 0.8rem;
-       text-align: center;
-       color: rgb(212, 255, 255);
-       background-color: rgb(89, 162, 252);
-       padding: 2%;
-       border-radius: 5px;
-       border: none;
+    .form-contacto {
+        @include centrar-elemento;
+        padding: 5% 2% 5% 2%;
+        display: grid;
+        grid-template-columns: 20% 50% 30%;
+        grid-template-rows: repeat(5, 10%) 30% repeat(2, 10%);
+        row-gap: 2%;
+        align-items: center;
+
+        &__motivo {
+            grid-column: span 1;
+
+
+            &-drop {
+                grid-column: span 2;
+            }
+        }
+
+        &__boton {
+            width: 100%;
+            font-family: $ff-titulos;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-align: center;
+            color: rgb(212, 255, 255);
+            background-color: rgb(89, 162, 252);
+            padding: 2%;
+            border-radius: 5px;
+            border: none;
+        }
+
+
     }
-    
-
- }
 
 
 
 
-.direccion {
-    margin-top: 2%;
-    @include centrar-elemento;
-    width: 90%;
-    display: flex;
-    column-gap: 4%;
-    flex-direction: column;
-    align-items: center;
-      
+    .direccion {
+        margin-top: 2%;
+        @include centrar-elemento;
+        width: 90%;
+        display: flex;
+        column-gap: 4%;
+        flex-direction: column;
+        align-items: center;
+
         &__mapa {
             width: 100%;
             height: 300px;
@@ -193,63 +243,74 @@ visibility: hidden;}
             text-align: center;
             font-size: 0.8rem;
         }
-     }
- }
+    }
+}
 
 
 /* Desktop */
 
 @media screen and (min-width: 1024px) {
 
-/* Contacto */
+    /* Contacto */
 
-/* Sección Banner*/
+    /* Sección Banner*/
 
-.banner-princ {
-  
-    &__parrafo-pages {
-      @include centrar-elemento;
-      font-size: 1.1rem;
-      font-family: $ff-parrafos;
-      font-weight: 500;
-      color: $gris-parrafos;
-      line-height: 1.5rem;
-      text-align: center;
+    .banner-princ {
+
+        &__parrafo-pages {
+            @include centrar-elemento;
+            font-size: 1.1rem;
+            font-family: $ff-parrafos;
+            font-weight: 500;
+            color: $gris-parrafos;
+            line-height: 1.5rem;
+            text-align: center;
+            padding: 1%;
+        }
+
+        &--contacto {
+            @include banner-secciones;
+            background-image: url(/img/banner-contacto.jpg);
+            background-position: 100% 50%;
+        }
     }
-  
-    &--contacto {
-      @include banner-secciones;
-      background-image: url(/img/banner-contacto.jpg);
-      background-position: 100% 50%;
+
+    /* Formulario*/
+
+    .form-contacto {
+        @include centrar-elemento;
+        padding: 5% 2% 5% 2%;
+        display: grid;
+        grid-template-columns: 10% 50% 40%;
+        grid-template-rows: repeat(5, 10%) 25% 10% 15%;
+        row-gap: 1%;
+        align-items: center;
+
+
+        &__motivo {
+            grid-column: span 1;
+
+
+            &-drop {
+                grid-column: span 2;
+            }
+        }
+
+        &__boton {
+            width: 100%;
+            font-family: $ff-titulos;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-align: center;
+            color: rgb(212, 255, 255);
+            background-color: rgb(89, 162, 252);
+            padding: 2%;
+            border-radius: 5px;
+            border: none;
+        }
+
+
     }
-  }
-
-/* Formulario*/
-
-.form-contacto {
-    @include centrar-elemento;
-    padding: 5% 2% 5% 2%;
-    display: grid;
-    grid-template-columns: 10% 50% 40%;
-    grid-template-rows: repeat(5, 10%) 25% 10% 15% ;
-    row-gap: 1%;
-    align-items: center;
-
-    &__boton {
-        width: 100%;
-        font-family: $ff-titulos;
-       font-weight: 600;
-       font-size: 0.8rem;
-       text-align: center;
-       color: rgb(212, 255, 255);
-       background-color: rgb(89, 162, 252);
-       padding: 2%;
-       border-radius: 5px;
-       border: none;
-    }
-    
-
- }
 
 
 }

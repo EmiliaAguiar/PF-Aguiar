@@ -3,7 +3,7 @@
 .banner-princ {
 
   &--hoteles {
-    background-image: url(https://ibb.co/QKLbgv5);
+    background-image: url(../img/banner-hotel.jpg);
     background-position: 100% 100%;
     @include banner-secciones;
   }
@@ -35,9 +35,15 @@
 
   &__ciudad {
     grid-column: span 2;
+    border-radius: 10px;
+    font-family: $ff-parrafos;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 1%;
+    border: solid 1px $c-textogris;
   }
 
-  &__fecha {
+  &__checkin {
     font-family: $ff-parrafos;
     font-weight: 500;
     font-size: 0.8rem;
@@ -45,6 +51,15 @@
     margin: 2%;
     align-self: center;
 
+  }
+
+  &__date {
+    border-radius: 10px;
+    font-family: $ff-parrafos;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 1%;
+    border: solid 1px $c-textogris;
   }
 
   &__dropdown {
@@ -55,6 +70,12 @@
     font-size: 0.8rem;
     text-align: left;
     align-self: center;
+    border-radius: 10px;
+    font-family: $ff-parrafos;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 1%;
+    border: solid 1px $c-textogris;
   }
 
 }
