@@ -5,8 +5,7 @@
   padding: 4%;
   height: 350px;
   background-image: url(../img/fondo-home.jpg);
-  background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   display: flex;
   flex-flow: column nowrap;
@@ -17,7 +16,7 @@
     color: $c-princ;
     font-family: $ff-titulos;
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   &__parrafo {

@@ -96,7 +96,7 @@ body {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 4.7rem;
+  font-size: 3.5rem;
   text-align: center;
   margin-top: 15%;
 }
@@ -111,7 +111,7 @@ body {
 @mixin banner-secciones {
   background-attachment: fixed;
   height: 350px;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   display: flex;
   flex-flow: column nowrap;
