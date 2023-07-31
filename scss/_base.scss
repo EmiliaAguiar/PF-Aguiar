@@ -109,14 +109,13 @@ body {
 }
 
 @mixin banner-secciones {
-  background-attachment: fixed;
   height: 350px;
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 /* Animaciones */
